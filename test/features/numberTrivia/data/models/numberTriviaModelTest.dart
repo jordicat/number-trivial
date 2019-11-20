@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:number_trivia/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:number_trivia/features/number_trivia/domain/entities/number_trivia.dart';
 
-import '../../../../fixtures/fixture_reader.dart';
+import '../../../../fixtures/fixtureReader.dart';
 
 void main() {
   final tNumberTriviaModel = NumberTriviaModel(number: 1, text: 'Test Text');
@@ -35,7 +35,7 @@ void main() {
       () async {
         // arrange
         final Map<String, dynamic> jsonMap =
-            json.decode(fixture('trivia_double.json'));
+            json.decode(fixture('triviaDouble.json'));
         // act
         final result = NumberTriviaModel.fromJson(jsonMap);
         // assert
@@ -45,18 +45,18 @@ void main() {
   });
 
   group('toJson', () {
-  test(
-    'should return a JSON map containing the proper data',
-    () async {
-      // act
-      final result = tNumberTriviaModel.toJson();
-      // assert
-      final expectedJsonMap = {
-        "text": "Test Text",
-        "number": 1,
-      };
-      expect(result, expectedJsonMap);
-    },
-  );
-});
+    test(
+      'should return a JSON map containing the proper data',
+      () async {
+        // act
+        final result = tNumberTriviaModel.toJson();
+        // assert
+        final expectedJsonMap = {
+          "text": "Test Text",
+          "number": 1,
+        };
+        expect(result, expectedJsonMap);
+      },
+    );
+  });
 }
