@@ -11,6 +11,5 @@ class NumberTrivia extends Equatable {
   }) : super();
 
   @override
-  // TODO: implement props
   List<Object> get props => null;
 }
