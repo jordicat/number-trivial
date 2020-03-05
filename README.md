@@ -1,4 +1,4 @@
-# number_trivia
+# Clean TDD Architecture App: Number Trivia
 
 A new Flutter project based on a ResoCode tutorial.
 https://resocoder.com/
