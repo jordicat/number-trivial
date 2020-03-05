@@ -1,6 +1,7 @@
 # number_trivia
 
-A new Flutter project.
+A new Flutter project based on a ResoCode tutorial.
+https://resocoder.com/
 
 ## Getting Started
 
